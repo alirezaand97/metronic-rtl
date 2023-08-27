@@ -1,26 +1,4 @@
-<ng-container *ngIf="user$ | async as _user">
-  <div class="menu-item px-3">
-    <div class="menu-content d-flex align-items-center px-3">
-      <div class="symbol symbol-50px me-5">
-        <img alt="Logo" [src]="_user.pic" />
-      </div>
-
-      <div class="d-flex flex-column">
-        <div class="fw-bolder d-flex align-items-center fs-5">
-          {{ _user.firstname }} {{ _user.lastname }}
-          <span class="badge badge-light-success fw-bolder fs-8 px-2 py-1 ms-2"
-            >Pro</span
-          >
-        </div>
-        <a class="fw-bold text-muted text-hover-primary fs-7 cursor-pointer">
-          {{ _user.email }}
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="separator my-2"></div>
-
+<ng-container>
   <div class="menu-item px-5">
     <a routerLink="/crafted/pages/profile" class="menu-link px-5">
       My Profile
@@ -28,10 +6,16 @@
   </div>
 
   <div class="menu-item px-5">
-    <a class="menu-link px-5 cursor-pointer" placement="top-start" ngbTooltip="Coming soon">
+    <a
+      class="menu-link px-5 cursor-pointer"
+      placement="top-start"
+      ngbTooltip="Coming soon"
+    >
       <span class="menu-text">My Projects</span>
       <span class="menu-badge">
-        <span class="badge badge-light-danger badge-circle fw-bolder fs-7">3</span>
+        <span class="badge badge-light-danger badge-circle fw-bolder fs-7"
+          >3</span
+        >
       </span>
     </a>
   </div>
@@ -49,19 +33,38 @@
 
     <div class="menu-sub menu-sub-dropdown w-175px py-4">
       <div class="menu-item px-3">
-        <a class="menu-link px-5 cursor-pointer" placement="top-start" ngbTooltip="Coming soon">Referrals</a>
+        <a
+          class="menu-link px-5 cursor-pointer"
+          placement="top-start"
+          ngbTooltip="Coming soon"
+          >Referrals</a
+        >
       </div>
 
       <div class="menu-item px-3">
-        <a class="menu-link px-5 cursor-pointer" placement="top-start" ngbTooltip="Coming soon">Billing</a>
+        <a
+          class="menu-link px-5 cursor-pointer"
+          placement="top-start"
+          ngbTooltip="Coming soon"
+          >Billing</a
+        >
       </div>
 
       <div class="menu-item px-3">
-        <a class="menu-link px-5 cursor-pointer" placement="top-start" ngbTooltip="Coming soon">Payments</a>
+        <a
+          class="menu-link px-5 cursor-pointer"
+          placement="top-start"
+          ngbTooltip="Coming soon"
+          >Payments</a
+        >
       </div>
 
       <div class="menu-item px-3">
-        <a class="menu-link d-flex flex-stack px-5 cursor-pointer" placement="top-start" ngbTooltip="Coming soon">
+        <a
+          class="menu-link d-flex flex-stack px-5 cursor-pointer"
+          placement="top-start"
+          ngbTooltip="Coming soon"
+        >
           Statements
           <i
             class="fas fa-exclamation-circle ms-2 fs-7"
@@ -93,7 +96,12 @@
   </div>
 
   <div class="menu-item px-5">
-    <a class="menu-link px-5 cursor-pointer" placement="top-start" ngbTooltip="Coming soon">My Statements</a>
+    <a
+      class="menu-link px-5 cursor-pointer"
+      placement="top-start"
+      ngbTooltip="Coming soon"
+      >My Statements</a
+    >
   </div>
 
   <div class="separator my-2"></div>
@@ -108,17 +116,7 @@
       <span class="menu-title position-relative">
         Language
         <span
-          class="
-            fs-8
-            rounded
-            bg-light
-            px-3
-            py-2
-            position-absolute
-            translate-middle-y
-            top-50
-            end-0
-          "
+          class="fs-8 rounded bg-light px-3 py-2 position-absolute translate-middle-y top-50 end-0"
         >
           {{ language.name }}{{ " " }}
           <img
