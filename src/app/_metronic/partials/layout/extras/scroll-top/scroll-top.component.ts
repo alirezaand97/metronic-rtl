@@ -1,13 +1,14 @@
-import { Component, OnInit, OnDestroy, HostBinding } from '@angular/core';
-import { NavigationCancel, NavigationEnd, Router } from '@angular/router';
-import { Subscription } from 'rxjs';
+import { Component, HostBinding, OnDestroy, OnInit } from '@angular/core';
 import {
-  StickyComponent,
-  ScrollTopComponent,
-  MenuComponent,
-  ToggleComponent,
   DrawerComponent,
+  MenuComponent,
+  ScrollTopComponent,
+  StickyComponent,
+  ToggleComponent,
 } from '../../../../kt/components';
+import { NavigationCancel, NavigationEnd, Router } from '@angular/router';
+
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-scroll-top',

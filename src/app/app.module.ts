@@ -9,7 +9,6 @@ import { FakeAPIService } from './_fake/fake-api.service';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { HttpClientModule } from '@angular/common/http';
 import { InlineSVGModule } from 'ng-inline-svg-2';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule } from '@ngx-translate/core';
 import { environment } from 'src/environments/environment';
 
@@ -35,7 +34,6 @@ import { environment } from 'src/environments/environment';
     // #fake-end#
     AppRoutingModule,
     InlineSVGModule.forRoot(),
-    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

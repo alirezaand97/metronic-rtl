@@ -1,9 +1,4 @@
-import { DrawersModule, DropdownMenusModule, ModalsModule } from '../partials';
-import {
-  NgbDropdownModule,
-  NgbProgressbarModule,
-  NgbTooltipModule,
-} from '@ng-bootstrap/ng-bootstrap';
+import { DrawersModule, DropdownMenusModule } from '../partials';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AccountingComponent } from './components/toolbar/accounting/accounting.component';
@@ -70,13 +65,9 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     TranslationModule,
     InlineSVGModule,
-    NgbDropdownModule,
-    NgbProgressbarModule,
     ExtrasModule,
-    ModalsModule,
     DrawersModule,
     DropdownMenusModule,
-    NgbTooltipModule,
     TranslateModule,
     ThemeModeModule,
     SharedModule,
