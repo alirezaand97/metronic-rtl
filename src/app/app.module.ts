@@ -4,7 +4,6 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
-import { ClipboardModule } from 'ngx-clipboard';
 import { FakeAPIService } from './_fake/fake-api.service';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { HttpClientModule } from '@angular/common/http';
@@ -23,7 +22,6 @@ import { environment } from 'src/environments/environment';
     BrowserAnimationsModule,
     TranslateModule.forRoot(),
     HttpClientModule,
-    ClipboardModule,
     // #fake-start#
     environment.isMockEnabled
       ? HttpClientInMemoryWebApiModule.forRoot(FakeAPIService, {
